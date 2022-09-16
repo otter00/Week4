@@ -1,10 +1,13 @@
-
-
 header {
-    height: 120px;
+    min-height: 120px;
     display: flex;
     align-items: center;
     background-color: #FFFFFF;
+}
+
+#logo:hover {
+    transform: scale(1.25);
+    cursor: pointer;
 }
 
 nav {
@@ -16,8 +19,16 @@ nav {
     font-weight: bolder;
 }
 
+.options>span:active {
+    color: grey;
+}
+
+.options>span {
+    cursor: pointer;
+}
+
 .navpics {
-    display: inline-block;
+    display: inline-flex;
     width: 18%;
 }
 
@@ -27,13 +38,13 @@ nav {
 
 .hero {
 background-color: #F9B300; 
-height: 468px;
+min-height: 468px;
 }
 
 #beans {
     position: absolute;
     width: 35%;
-    height: 70%;
+    min-height: 75%;
     transform: rotate(16deg);
     left: 55em;
 }
@@ -52,7 +63,7 @@ height: 468px;
 
 .coffee>p {
     font-size: 68px;
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 section#roastStyle { 
@@ -61,19 +72,106 @@ section#roastStyle {
 }
 
 #wavyHead {
-    position:relative;
+    position:absolute;
     width:100%;
 }
 
 section#catalogue {
     background-color: lightgray;
-    height: 468px;
+    min-height: 1600px;
 }
 
 .container {
     width: 90%;
-    height: 284px;
-    background-color: aquamarine;
+    min-height: 480px;
     margin-left: 72px;
     margin-right: 48px;
+    position: absolute;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.degree, .geography {
+background-color: #FFFFFF;
+display: inline-flex;
+font-size: 24px;
+}
+
+.geography {
+    float: right;
+}
+
+.degree > p, .geography > .ginger-line-h > p  {
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.degree >p > span {
+    display: flex;
+    font-size: 0.8em;
+    font-weight: 400;
+}
+
+.ginger-line-h > p > span {
+    display: flex;
+    font-size: 0.8em;
+    font-weight: 400;
+}
+
+.ginger-line-h > p > span:hover {
+    cursor: pointer;
+}
+
+.preparation {
+    margin-top: 480px; 
+}
+
+.cup {
+    display: inline-flex;
+    background-color: #fff;
+}
+
+.cup:hover {
+    background-color: lightgray;
+}
+
+.item {
+    min-height: 25px;
+}
+
+.item > span, img {
+    display: flex;
+}
+
+.maininfo {
+    background-color: lightgrey;
+    min-height: 1600px;
+}
+
+.coffee-to-buy {
+    margin-top: 600px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 35px;
+    margin-right: 35px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.coffees {
+    background-color: #fff;
+}
+
+.coffees > p {
+    color: #F9B300;
+}
+
+#colombia, #price {
+    color: black;
+    font-size: larger;
+    font-weight: 600;
+}
+
+.pictureblock {
+    display: inline-flex;
 }
