@@ -10,6 +10,10 @@ header {
     cursor: pointer;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 nav {
     width: 60%;
 }
@@ -54,10 +58,16 @@ min-height: 468px;
     left: 50em;
 }
 
+.main-menu {
+    color:#fff;
+    padding-left: 68px;
+    padding-top: 24px;
+}
+
 .coffee {
     color: #FFFFFF;
     font-weight: 700;
-    padding-top: 148px;
+    padding-top: 78px;
     padding-left: 68px;
 }
 
@@ -76,9 +86,9 @@ section#roastStyle {
     width:100%;
 }
 
-section#catalogue {
-    background-color: lightgray;
-    min-height: 1600px;
+body {
+    min-height: 2400px;
+    background-color: rgb(241, 241, 241);
 }
 
 .container {
@@ -148,30 +158,134 @@ font-size: 24px;
     min-height: 1600px;
 }
 
+#sort {
+    margin-left: 78px; 
+    font-weight: bolder;
+    text-decoration: underline;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 .coffee-to-buy {
     margin-top: 600px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     margin-left: 35px;
     margin-right: 35px;
     padding-left: 45px;
     padding-right: 45px;
+    padding-bottom: 45px; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .coffees {
+    border: 1px solid lightgray;
     background-color: #fff;
+}
+
+.button > select {
+    background-color: #ffeab5;
+    border: 1px solid  #F9B300;
 }
 
 .coffees > p {
     color: #F9B300;
 }
 
-#colombia, #price {
+.stars, .feedback, .seeds, .little-circles {
+    display: flex;
+}
+
+#sale {
+    color: lightgray;
+    font-size: 0.9em;
+    text-decoration: line-through;
+}
+
+#colombia {
     color: black;
     font-size: larger;
     font-weight: 600;
 }
 
+#price {
+    color: black;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
 .pictureblock {
     display: inline-flex;
+}
+
+.buttonbuy > button {
+    color:#FFFFFF;
+    background-color: #F9B300;
+    border: none;
+}
+
+.show-else-block {
+    background-color: #fff;
+    border: 1px solid lightgray;
+    margin: 0 78px 95px 78px;
+}
+
+.show-else-block > p {
+    text-align: center;
+}
+
+.foot {
+    background-color: #fff;
+    min-height: 800px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#grey-line {
+    position: absolute;
+}
+
+#ginger-line {
+    padding-top: 18px;
+}
+
+.foot > #beans, #coffee {
+    left: 70em;
+}
+
+.news {
+    margin-top: 0px;
+    margin-left: 45px;
+}
+
+.news > #st-p {
+font-size: 36px;
+font-weight: 800;
+}
+
+.news > #nd-p {
+    font-size: 24px;
+    font-weight:400;
+}
+
+.email {
+    margin-left: 45px;
+}
+
+.email > button {
+    background-color: #F9B300;
+    border: none;
+    color:#fff;
+    width: 124px;
+}
+
+input {
+    background-color: lightgray;
+    border: none;
+}
+
+.agreement > span {
+    color: #F9B300;
+}
+
+.agreement {
+    font-size: 0.8em;
 }
