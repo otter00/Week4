@@ -181,6 +181,8 @@ body {
     flex-direction: column;
     margin: 25px;
     height: 90%;
+    padding-left: 14px;
+    padding-right: 14px;
 }
 
 .ginger-line-h {
@@ -202,7 +204,6 @@ body {
 }
 
 .countries-container > div {
-    overflow: hidden;
     width: 25%;
 }
 
@@ -217,7 +218,7 @@ body {
 }
 
 #sour, #prep-way {
-    height: 47%;
+    height: 43%;
 }
 
 .geo, .sour, .prep-way, .elite, .special {
