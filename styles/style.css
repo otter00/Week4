@@ -10,11 +10,13 @@ body {
 /*  some settings for visual aesthetics 
     (should be disabled after all)      */
 
-/* section,
+section,
 div,
-.foot {
+.foot,
+input,
+button {
     border: 1px solid red;
-} */
+}
 
 main {
     margin-bottom: 72px;
@@ -119,7 +121,7 @@ min-height: 468px;
 }
 
 #wavyHead {
-    height: 164px;
+    height: 190px;
     width: 100%;
     position: absolute;
 }
@@ -450,6 +452,7 @@ select > option {
 /*   THIS IS FOOTEEEEEEEEEEEEEEEEEEEEER!!!     */
 
 .foot {
+    overflow: hidden;
     background-color: #fff;
     min-height: 640px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -465,29 +468,50 @@ select > option {
 }
 
 .news {
+    display: flex;
     margin-top: 0px;
-    margin-left: 45px;
 }
 
-.news > #st-p {
+.mailing {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding-left: 54px;
+    margin-left: 54px;
+}
+
+.mailing > #st-p {
 font-size: 36px;
-font-weight: 800;
+font-weight: 900;
 }
 
-.news > #nd-p {
-    font-size: 24px;
+.mailing > #nd-p {
+    font-size: 18px;
     font-weight:400;
 }
 
 .email {
-    margin-left: 45px;
+    height: 48px;
+    padding: 7px;
+}
+
+.email-input {
+    width: 75%;
+    height: 90%;
+    border-radius: 25px;
+    padding-left: 36px;
+}
+
+.subs-button {
+    width: 20%;
+    height: 90%;
+    border-radius: 25px;
 }
 
 .email > button {
     background-color: #F9B300;
     border: none;
     color:#fff;
-    width: 124px;
 }
 
 input {
@@ -501,6 +525,21 @@ input {
 
 .agreement {
     font-size: 0.8em;
+}
+
+.footer-beans {
+    width: 55%;
+    height: 60vh;
+    position: absolute;
+    transform: rotate(15deg);
+    display: flex;
+}
+
+.footer-coffee-cup {
+    position: absolute;
+    height: 50vh;
+    width: 10vw;
+    transform: rotate(345deg);
 }
 
 footer {
@@ -521,5 +560,6 @@ footer {
 }
 
 .footer-nav > span {
+    font-weight: 600;
     padding-left: 35px;
 }
