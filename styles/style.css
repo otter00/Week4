@@ -10,13 +10,13 @@ body {
 /*  some settings for visual aesthetics 
     (should be disabled after all)      */
 
-section,
+/* section,
 div,
 .foot,
 input,
 button {
     border: 1px solid red;
-}
+} */
 
 main {
     margin-bottom: 72px;
